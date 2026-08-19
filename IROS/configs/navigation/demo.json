@@ -1,0 +1,13 @@
+{
+  "robot_radius_px": 25.0,
+  "use_mask_align": true,
+  "mask_align_scale": 0.075,
+  "mask_align_dilate_px": 3,
+  "mask_align_template_path": null,
+  "mask_align_radius_mode": "area_equivalent",
+  "start_region": null,
+  "safety_margin_weight": 5.0,
+  "path_resolution": 2.0,
+  "n_start_samples": 5,
+  "output_dir": "outputs/navigation"
+}

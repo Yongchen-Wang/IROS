@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iros"
+version = "0.1.0"
+description = "Dual-UMP microrobot navigation and shared-control research tools"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+  "matplotlib>=3.7",
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "Pillow>=9.4",
+  "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+vision = [
+  "networkx>=3.0",
+  "opencv-python>=4.7",
+  "scikit-image>=0.21",
+]
+training = [
+  "opencv-python>=4.7",
+  "torch>=2.5",
+  "torchvision>=0.20",
+  "tqdm>=4.66",
+]
+ui = [
+  "gradio>=4.0",
+  "opencv-python>=4.7",
+  "torch>=2.5",
+]
+yolo = ["ultralytics>=8.0"]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+iros-export-trajectory = "iros.navigation.export_trajectory_csv:main"
+iros-visualize = "iros.navigation.visualize:main"
+iros-animate = "iros.navigation.animate_path:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

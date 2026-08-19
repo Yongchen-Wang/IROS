@@ -1,0 +1,26 @@
+{
+  "robot_radius_px": 58.5,
+  "ump_rod_width_maze": 10.0,
+  "ump_rod_length_maze": 117.0,
+  "start_region": {
+    "type": "circular",
+    "center": [446.91, 454.15],
+    "radius": 25.0
+  },
+  "safety_margin_weight": 5.0,
+  "path_resolution": 2.0,
+  "path_smoothing_enabled": true,
+  "path_smoothing_factor": 0.01,
+  "center_preference_alpha": 2.0,
+  "use_exponential_cost": true,
+  "n_start_samples": 5,
+  "effective_radius_px_override": 12.0,
+  "disable_ump_mask_for_planning": true,
+  "enable_ump_rod_detection": true,
+  "targets_maze": {
+    "A": [800.0, 580.0],
+    "B": [480.0, 800.0],
+    "C": [130.0, 720.0]
+  },
+  "output_dir": "outputs/navigation"
+}
