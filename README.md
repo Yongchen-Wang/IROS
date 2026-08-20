@@ -27,8 +27,7 @@ adaptive shared control of magnetically driven microrobots.
 
 This repository accompanies **Bi-CAST**, a context-aware adaptive shared-control
 framework for bimanual magnetic micromanipulation. The framework combines
-spatio-temporal visual information, spatial risk metrics, and interaction
-history to allocate control authority continuously between a human operator and
+spatio-temporal visual information, bilateral force-based operator intent, and spatial safety metrics to allocate control authority continuously between a human operator and
 autonomous assistance.
 
 The repository includes:
